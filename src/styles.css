@@ -1,0 +1,46 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.flexNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: dodgerblue;
+  color: #ebebeb;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-gap: 10px;
+  place-items: center;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  justify-content: center;
+}
+img {
+  height: 320px;
+  object-fit: cover;
+}
+.favorite {
+  background-color: rgb(29, 197, 23);
+  color: #fff;
+}
+.btn {
+  border: none;
+  align-self: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
